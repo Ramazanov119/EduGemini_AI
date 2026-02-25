@@ -1,2 +1,3 @@
-Нужно открыть через PyCharm
-streamlit run main.py это чтобы по пайтону переходить  
+Сайт было создано с фреймфорком Streamlit на языке программирование python 
+
+streamlit run main.py для запуска кода
