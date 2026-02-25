@@ -2,10 +2,6 @@ import streamlit as st
 from openai import OpenAI
 
 
-# =====================================================
-# 🔐 INIT CLIENT (без падений если нет ключа)
-# =====================================================
-
 client = None
 USE_REAL_AI = False
 
@@ -21,10 +17,6 @@ try:
 except Exception:
     USE_REAL_AI = False
 
-
-# =====================================================
-# 🧠 AI ANALYSIS
-# =====================================================
 
 def generate_ai_analysis(name, scores):
 
@@ -64,9 +56,6 @@ def generate_ai_analysis(name, scores):
         return fallback_analysis(name, scores)
 
 
-# =====================================================
-# 🚀 ROADMAP GENERATOR
-# =====================================================
 
 def generate_roadmap(goal):
 
@@ -98,9 +87,6 @@ def generate_roadmap(goal):
         return fallback_roadmap(goal)
 
 
-# =====================================================
-# 🛟 FALLBACK ANALYSIS (если API не работает)
-# =====================================================
 
 def fallback_analysis(name, scores):
 
@@ -165,11 +151,6 @@ def fallback_analysis(name, scores):
     """
 
     return text
-
-
-# =====================================================
-# 🛟 FALLBACK ROADMAP
-# =====================================================
 
 def fallback_roadmap(goal):
 
