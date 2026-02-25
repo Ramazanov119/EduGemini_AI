@@ -1,4 +1,0 @@
-"""
-UI components for EduPlatform.
-"""
-
